@@ -1,0 +1,130 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">INFR3120</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+        <% if (title == "Home") { %>
+          <a class="nav-link active" href="/home">
+        <% } else { %>
+          <a class="nav-link" href="/home">
+        <% } %>
+          <i class="fa-solid fa-lg fa-house-chimney"></i> Home</a>
+        </li>
+
+         <li class="nav-item">
+        <% if (title == "About") { %>
+          <a class="nav-link active" href="/about">
+        <% } else { %>
+          <a class="nav-link" href="/about">
+        <% } %>
+          <i class="fa-solid fa-lg fa-user-astronaut"></i> About</a>
+        </li>
+
+         <li class="nav-item">
+        <% if (title == "Projects") { %> 
+          <a class="nav-link active" href="/projects">
+        <% } else { %>
+          <a class="nav-link" href="/projects">
+        <% } %>  
+          <i class="fa-solid fa-lg fa-rocket"></i> Projects</a>
+        </li>
+
+         <li class="nav-item">
+         <% if (title == "Contact Me") { %> 
+          <a class="nav-link active" href="/contact">
+        <% } else { %>
+          <a class="nav-link" href="/contact">
+        <% } %>   
+          <i class="fa-solid fa-lg fa-square-phone"></i> Contact Me</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+    <!---------------Home---------------->
+<div id="home">
+    <div class="container">
+            <img src = "public\images\—Pngtree—hand drawn namaste card_6319546.png" class = "logo"> 
+        <div class="home-text">
+            <p>Web & Script Programming</p>
+            <h1><span>Welcome</span>, I am<br>Shalin Vaidya</h1>
+        </div>
+    </div>
+</div>
+
+<!------About------------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="public\images\picture_me.PORTRAIT.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="title">About Me</h1>
+        <!------------- video -------------------->     
+                <video controls autoplay muted loop src="public\images\aboutme_1.mp4" width="500" class="vid">
+                </video>
+        <!--------------Vid end ------------->        
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>In the python project, I implemented two types of ciphers: Caesar cipher and Transposition cipher.
+                    I wrote python code to encrypt and decrypt messages using both Caesar and Transposition ciphers. I also wrote some test cases to check if my code works correctly. 
+                    I also learned how to use some python modules, such as sys, pyperclip, and random. I enjoyed working on this project because it was fun and challenging to create my own ciphers and crack them.</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-excel"></i>
+                <h2>VBA</h2>
+                <p> Mortgage Stress Test Calculator using VBA. In this project,I created a useful application that can help potential home buyers evaluate their financial readiness and eligibility for a mortgage loan based on the FCAC guidelines and the stress test criteria. 
+                    I used various interface elements, such as labels, text boxes, buttons, and message boxes, to make the application user-friendly and interactive. 
+                    I also used error handling techniques, such as data validation and exception handling, to prevent invalid inputs and unexpected errors.
+                    I enjoyed working on this project because it was relevant and practical to real-world scenarios.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact_l">
+                <h1 class="con_title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>shalin.vaidya@ontariotechu.net</p>
+                <p><i class="fa-solid fa-square-phone"></i>+1 (905) 783-3168</p>
+                <div class="social_icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact_r">
+                <form>
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
