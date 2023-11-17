@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('webproject:server');
+var app = require('./server/config/app');
+var debug = require('debug')('classproject:server');
 var http = require('http');
 
 /**
